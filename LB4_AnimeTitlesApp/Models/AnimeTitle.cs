@@ -31,9 +31,12 @@ public partial class AnimeTitle
 
     public string Studio { get; set; } = null!;
 
-    public virtual AnimeType IdAnimeTypeNavigation { get; set; } = null!;
+    //навигационные свойства
+    //одному тайлу соответсвует только один тип аниме 
 
-    public virtual Genre IdGenreNavigation { get; set; } = null!;
+    public virtual AnimeType AnimeType { get; set; } = null!;
 
-    public virtual User IdModeratorNavigation { get; set; } = null!;
+    public virtual Genre Genre { get; set; } = null!;
+
+    public virtual User User { get; set; } = null!;
 }
