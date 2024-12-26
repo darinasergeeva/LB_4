@@ -115,7 +115,6 @@
             Margin = new Padding(5);
             Name = "FormTypes";
             Text = "Типы аниме";
-            Load += FormTypes_Load;
             flowLayoutPanelTop.ResumeLayout(false);
             panelFill.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridViewTypes).EndInit();

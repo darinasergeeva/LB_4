@@ -35,9 +35,12 @@ namespace LB4_AnimeTitlesApp
             dataGridViewTypes.Columns["AnimeOftype"].HeaderText="Тип";
         }
 
-        private void FormTypes_Load(object sender, EventArgs e)
+        protected override void OnClosing(CancelEventArgs e)
         {
+            base.OnClosing(e);
 
+            this.db?.Dispose();
+            this.db = null;
         }
     }
 }
